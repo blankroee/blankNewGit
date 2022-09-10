@@ -30,11 +30,13 @@ export default function Gallery(props: { images: GalleryPic[] }) {
     return (
       <div className="viewGallery hover14">
         <figure>
-          <img
-            className="imgG"
-            src={imageSrc}
-            onClick={() => selectFullImg(imageSrc, title)}
-          />
+          <LazyLoad height={762}>
+            <img
+              className="imgG"
+              src={imageSrc}
+              onClick={() => selectFullImg(imageSrc, title)}
+            />{" "}
+          </LazyLoad>
           <p className="imgText">{title}</p>
         </figure>
       </div>
