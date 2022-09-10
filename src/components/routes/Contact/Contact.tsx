@@ -22,7 +22,7 @@ export default function Contact() {
   async function getAllContacts() {
     // const response = await fetch("http://127.0.0.1:5000/api/contacts/")
     const response = await fetch(
-      "https://studio-blank.herokuapp.com/api/contacts/"
+      "https://studio-blank-server.herokuapp.com/api/contacts/"
     )
       .then((response) => response.json())
       .then((data) => {
@@ -39,7 +39,7 @@ export default function Contact() {
   async function submitMyForm() {
     // setMyForm({ ...myForm, date: new Date() });
     const response = await fetch(
-      "https://studio-blank.herokuapp.com/api/contacts/",
+      "https://studio-blank-server.herokuapp.com/api/contacts/",
       {
         method: "POST", // *GET, POST, PUT, DELETE, etc.
         mode: "cors", // no-cors, *cors, same-origin
