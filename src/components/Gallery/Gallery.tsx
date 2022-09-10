@@ -3,7 +3,6 @@ import { MainCategory } from "../routes/Home/Home";
 import "./Gallery.css";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-import LazyLoad from "react-lazy-load";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -30,13 +29,11 @@ export default function Gallery(props: { images: GalleryPic[] }) {
     return (
       <div className="viewGallery hover14">
         <figure>
-          <LazyLoad height={762}>
-            <img
-              className="imgG"
-              src={imageSrc}
-              onClick={() => selectFullImg(imageSrc, title)}
-            />{" "}
-          </LazyLoad>
+          <img
+            className="imgG"
+            src={imageSrc}
+            onClick={() => selectFullImg(imageSrc, title)}
+          />{" "}
           <p className="imgText">{title}</p>
         </figure>
       </div>
@@ -61,14 +58,12 @@ export default function Gallery(props: { images: GalleryPic[] }) {
           <div id="fullImgDiv">
             <img className="FullImg" src={clickedImg} alt="" />
             <h2 className="clickedImgH2">{clickedImgTitle}</h2>
-            <LazyLoad height={762}>
-              <img
-                className="closeIcon"
-                src="colseIcon.png"
-                onClick={fullImg}
-                alt=""
-              />
-            </LazyLoad>
+            <img
+              className="closeIcon"
+              src="colseIcon.png"
+              onClick={fullImg}
+              alt=""
+            />
           </div>
         </div>
       )}
