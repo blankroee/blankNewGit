@@ -1,0 +1,200 @@
+.flexDiv {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.view {
+  width: 100%;
+  height: 100vh;
+  flex: 1 1 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* border: 1px solid black; */
+  margin: 0;
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+  /* box-shadow: 1px 1px 2px #e6e6e6; */
+  cursor: default;
+  background: #fff url(../../../public/darkBG.jpg) no-repeat center center;
+  background-size: cover;
+}
+
+@media only screen and (orientation: landscape) {
+  .view {
+    /* min-width: 30%; */
+    width: auto;
+    max-width: 33.3%;
+    height: 100vh;
+    flex: 1 1 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* border: 1px solid black; */
+    margin: auto;
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+    /* box-shadow: 1px 1px 2px #e6e6e6; */
+    cursor: default;
+    background: #fff url(../../../public/darkBG.jpg) no-repeat center center;
+    background-size: cover;
+  }
+}
+
+.view .mask,
+.view .content {
+  width: 100%;
+  height: 100%;
+  /* flex: 1 1 auto; */
+  justify-content: center;
+  align-items: center;
+
+  position: absolute;
+  margin: auto;
+  /* padding: 50px 0; */
+  overflow: hidden;
+  /* top: 0; */
+  /* left: 0; */
+  background: #fff url(../../../public/BG.jpg) no-repeat center center;
+  background-size: cover;
+}
+.view img {
+  display: block;
+  width: 100%;
+  position: relative;
+  /* object-fit: contain; */
+}
+.view h2 {
+  color: #fff;
+  text-align: center;
+  display: block;
+  width: 100%;
+  /* position: absolute; */
+  font-family: "Nothing You Could Do", cursive;
+  font-weight: 400;
+  font-size: 65px;
+  padding: 10px;
+  background: rgba(0, 0, 0, 0.8);
+}
+.view p {
+  font-size: 18px;
+  display: block;
+  /* position: absolute; */
+  color: #fff;
+  width: 70%;
+  margin: auto;
+  padding: 10px 20px 20px;
+  text-align: center;
+  direction: rtl;
+}
+
+.view label {
+  font-size: 18px;
+  position: relative;
+  color: #fff;
+  margin: auto;
+  padding: 10px 20px 20px;
+  text-align: justify;
+}
+
+.view a.info {
+  display: inline-block;
+  text-decoration: none;
+  padding: 7px 14px;
+  background: #000;
+  color: #fff;
+  text-transform: uppercase;
+  font-family: Assistant;
+  font-size: 20px;
+  box-shadow: 0 0 1px #000;
+}
+.view a.info:hover {
+  box-shadow: 0 0 5px #000;
+}
+
+.view-tenth img {
+  /* transform: scaleY(1); */
+  transition: all 0.7s ease-in-out;
+
+  /* object-fit: cover; */
+}
+.view-tenth .mask {
+  background-color: rgba(255, 231, 179, 0);
+  transition: all 0.5s linear;
+  opacity: 0;
+}
+.view-tenth h2 {
+  /* border-bottom: 1px solid rgba(0, 0, 0, 0.3); */
+  margin-bottom: 3px;
+  background: transparent;
+  flex-basis: 100%;
+  transform: scale(0);
+  color: rgb(255, 255, 255);
+  transition: all 0.5s linear;
+  opacity: 0;
+}
+.view-tenth p {
+  color: rgb(255, 255, 255);
+  opacity: 0;
+  transform: scale(0);
+  transition: all 0.5s linear;
+}
+.view-tenth a.info {
+  opacity: 0;
+  transform: scale(0);
+  transition: all 0.5s linear;
+}
+
+.view-tenth:hover img {
+  transform: scale(3);
+  opacity: 0;
+}
+.view-tenth:hover .mask {
+  opacity: 1;
+}
+.view-tenth:hover h2,
+.view-tenth:hover p,
+.view-tenth:hover a.info {
+  transform: scale(1);
+  opacity: 1;
+}
+
+.maskContent {
+  width: 100%;
+  height: 100%;
+  flex: 1 1 auto;
+  align-items: center;
+  justify-content: center;
+  /* border: 1px solid white; */
+  margin: 0;
+  /* position: absolute; */
+  /* padding: 50px 0; */
+  padding-top: 30%;
+  overflow: hidden;
+  /* top: 0;
+      left: 0; */
+  background-size: cover;
+}
+
+@media only screen and (orientation: landscape) {
+  .maskContent {
+    width: 100%;
+    height: 100%;
+    flex: 1 1 auto;
+    align-items: center;
+    justify-content: center;
+    /* border: 1px solid white; */
+    margin: 0;
+    /* position: absolute; */
+    /* padding: 50px 0; */
+    padding-top: 50%;
+    overflow: hidden;
+    /* top: 0;
+        left: 0; */
+    background-size: cover;
+  }
+}

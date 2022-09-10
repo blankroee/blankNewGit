@@ -1,0 +1,93 @@
+.logoEffectWrap {
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  text-align: center;
+  justify-content: center;
+  justify-items: center;
+  overflow: hidden;
+}
+
+.logoEffect {
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  text-align: center;
+  justify-content: center;
+  justify-items: center;
+  padding: 20px;
+  overflow: hidden;
+  background-color: white;
+  background-image: url("../../../../public/mainHomeBG2Mob.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: top right;
+  background-size: cover;
+  overflow: hidden;
+
+  z-index: 100;
+}
+@media only screen and (orientation: landscape) {
+  .logoEffect {
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    text-align: center;
+    justify-content: center;
+    justify-items: center;
+    padding: 20px;
+    overflow: hidden;
+    background-color: white;
+    background-image: url("../../../../public/mainHomeBG2.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: top right;
+    background-size: cover;
+    overflow: hidden;
+
+    z-index: 100;
+  }
+}
+
+.test,
+.test1 {
+  visibility: hidden;
+  position: absolute;
+  margin: auto;
+  top: 25%;
+  left: 35%;
+}
+
+.whiteCircle {
+  width: 300px;
+  margin-left: -500px;
+}
+
+.logoAnimation,
+.logoAnimation2 {
+  max-width: 900px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  visibility: hidden;
+}
+
+.desktopEffect {
+  display: none;
+}
+
+.mobEffect {
+  display: block;
+}
+
+@media only screen and (orientation: landscape) {
+  .desktopEffect {
+    display: block;
+  }
+  .mobEffect {
+    display: none;
+  }
+}

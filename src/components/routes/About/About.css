@@ -1,0 +1,198 @@
+.myPic {
+  opacity: 0.3;
+  height: 100vh;
+  width: 100%;
+  background-image: url("../../../../public/about.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+@media only screen and (orientation: landscape) {
+  .myPic {
+    opacity: 0.3;
+    /* height: 100vh; */
+    float: right;
+    width: 50%;
+    height: 100vh;
+    background-image: url("../../../../public/about.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+}
+
+.rightOrCenter {
+  position: relative;
+
+  color: #fff;
+  text-align: center;
+  display: block;
+  width: fit-content;
+  max-width: 94%;
+  margin: auto;
+  /* margin-top: 140px; */
+  font-family: "Nothing You Could Do", cursive;
+  font-weight: 400;
+  font-size: 55px;
+  padding: 10px 10px 0 10px;
+  margin-bottom: 0;
+  line-height: 1;
+}
+
+@media only screen and (orientation: landscape) {
+  .rightOrCenter {
+    position: relative;
+    color: #fff;
+    text-align: right;
+    display: block;
+    width: fit-content;
+    /* max-width: 94%; */
+    margin-top: 0px;
+    margin-left: 30px;
+    font-family: "Nothing You Could Do", cursive;
+    font-weight: 400;
+    font-size: 80px;
+    /* padding: 10px 10px 0 10px; */
+    float: right;
+    margin-bottom: 0;
+    line-height: 1;
+  }
+}
+
+.rightOrCenter::before {
+  content: "";
+  position: absolute;
+  bottom: 8px;
+  left: 0;
+  background: rgb(255, 255, 255);
+  width: 100%;
+  height: 1px;
+  animation: animateKoteret 0.51s linear forwards;
+  /* overflow: hidden; */
+}
+
+@keyframes animateKoteret {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 100%;
+  }
+}
+
+.fade-in {
+  animation: fadeIn2 7.2s;
+}
+
+@keyframes fadeIn2 {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0.3;
+  }
+}
+
+.aboutText {
+  display: none;
+  margin-top: 20px;
+  color: white;
+  font-size: 20px;
+  direction: rtl;
+  text-align: right;
+  float: right;
+  font-family: Assistant;
+}
+.aboutTextMobile {
+  display: block;
+  margin-top: 20px;
+  color: white;
+  font-size: 20px;
+  direction: rtl;
+  text-align: right;
+  float: right;
+  font-family: Assistant;
+}
+
+@media only screen and (orientation: landscape) {
+  .aboutText {
+    display: block;
+  }
+  .aboutTextMobile {
+    display: none;
+  }
+}
+
+.textDiv {
+  align-items: center;
+  justify-items: center;
+  height: auto;
+  margin-top: 20%;
+  width: 94%;
+  padding-left: 20px;
+  text-align: right;
+}
+@media only screen and (orientation: landscape) {
+  .textDiv {
+    align-items: center;
+    justify-items: center;
+    height: auto;
+    margin-top: 20%;
+    width: 50%;
+    padding-left: 20px;
+    text-align: right;
+
+    /* left: 16%; */
+  }
+}
+
+.textAndPic {
+  justify-content: right;
+  justify-items: center;
+  height: 100vh;
+}
+
+@media only screen and (orientation: landscape) {
+  .textAndPic {
+    display: flex;
+    justify-content: right;
+    justify-items: center;
+    height: 100vh;
+  }
+}
+
+.koteretDiv {
+  display: flex;
+  justify-content: right;
+  justify-items: center;
+}
+
+.kotere3 {
+  position: relative;
+  /* float: right; */
+  color: #fff;
+  width: auto;
+  text-align: right;
+  display: inline-block;
+  font-family: "Nothing You Could Do", cursive;
+  font-weight: 400;
+  font-size: 60px;
+  padding: 10px 0 0 10px;
+  margin-bottom: 0;
+  line-height: 1;
+  /* overflow: hidden; */
+}
+
+.kotere3::before {
+  content: "";
+  position: absolute;
+  bottom: 8px;
+  left: 0;
+  margin: auto;
+  background: rgb(255, 255, 255);
+  /* width: auto; */
+  height: 1px;
+  animation: animateKoteret 0.51s linear forwards;
+  /* overflow: hidden; */
+}

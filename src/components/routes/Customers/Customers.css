@@ -1,0 +1,85 @@
+.CustomerseH2 {
+  color: #fff;
+  text-align: center;
+  font-weight: 400;
+  font-family: "Assistant";
+  font-size: 26px;
+  margin-top: 0;
+}
+
+/* .CustomerseH1 {
+  color: #fff;
+  text-align: center;
+  display: block;
+  width: 100%;
+  margin-top: 140px;
+  font-family: "Nothing You Could Do", cursive;
+  font-weight: 400;
+  font-size: 80px;
+  padding: 10px 10px 0 10px;
+  margin-bottom: 0;
+  line-height: 1;
+} */
+
+.CustomerseH1 {
+  position: relative;
+
+  color: #fff;
+  text-align: center;
+  display: block;
+  width: fit-content;
+  max-width: 94%;
+  margin: auto;
+  /* margin-top: 140px; */
+  font-family: "Nothing You Could Do", cursive;
+  font-weight: 400;
+  font-size: 55px;
+  padding: 10px 10px 0 10px;
+  margin-bottom: 0;
+  line-height: 1;
+}
+
+@media only screen and (orientation: landscape) {
+  .CustomerseH1 {
+    position: relative;
+
+    color: #fff;
+    text-align: center;
+    display: block;
+    width: fit-content;
+    max-width: 94%;
+    margin: auto;
+    /* margin-top: 140px; */
+    font-family: "Nothing You Could Do", cursive;
+    font-weight: 400;
+    font-size: 80px;
+    padding: 10px 10px 0 10px;
+    margin-bottom: 0;
+    line-height: 1;
+  }
+}
+
+.CustomerseH1::before {
+  content: "";
+  position: absolute;
+  bottom: 8px;
+  left: 0;
+  background: rgb(255, 255, 255);
+  width: 100%;
+  height: 1px;
+  animation: animateKoteret 0.51s linear forwards;
+  /* overflow: hidden; */
+}
+
+@keyframes animateKoteret {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 100%;
+  }
+}
+
+.empty140px {
+  height: 140px;
+}

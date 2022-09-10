@@ -1,0 +1,115 @@
+#desktopAndMobileNavs {
+  width: 100vw;
+  overflow: hidden;
+}
+
+#mobileNav {
+  display: flex;
+  padding: 10px 40px;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  z-index: 1;
+  background-color: rgba(255, 255, 255, 1);
+  width: 100vw;
+  /* margin-left: 2%; */
+  box-shadow: 13px 15px 11px -11px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 13px 15px 11px -11px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 13px 15px 11px -11px rgba(0, 0, 0, 0.75);
+  overflow: hidden;
+}
+
+.itemsMobile {
+  /* margin-left: 30px; */
+  color: rgb(23, 23, 23);
+  /* line-height: 54px; */
+  display: block;
+  transition: 0.3s ease;
+  font-family: "Assistant";
+  font-size: 20px;
+  text-decoration: none;
+  /* border-top: 4px solid #ffffff; */
+  border-bottom: 1px solid #000000;
+  padding: 30px 0;
+  margin: 0 20px;
+  text-align: center;
+}
+
+#nav {
+  display: none;
+}
+
+@media only screen and (orientation: landscape) {
+  #nav {
+    display: flex;
+    padding: 10px 40px;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    background-color: rgba(255, 255, 255, 1);
+    width: 100%;
+    overflow: hidden;
+    /* margin-left: 2%; */
+    box-shadow: 13px 15px 11px -11px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: 13px 15px 11px -11px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 13px 15px 11px -11px rgba(0, 0, 0, 0.75);
+  }
+  #mobileNav {
+    display: none;
+  }
+}
+.closeMenu {
+  margin-top: 20px;
+  margin-left: 30px;
+}
+#navItemsMobile {
+  align-items: center;
+  padding-bottom: 5px;
+  /* display: none; */
+  width: 100vw;
+  height: 100vh;
+  background-color: #ffffff;
+  /* position: absolute; */
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 3000;
+  transform: translateX(100%);
+  overflow: hidden;
+}
+
+#navItems {
+  align-items: center;
+  float: right;
+  padding-bottom: 5px;
+}
+
+.items {
+  margin-left: 30px;
+  color: rgb(23, 23, 23);
+  /* line-height: 54px; */
+  font-family: "Assistant";
+
+  transition: 0.3s ease;
+  font-size: 20px;
+  text-decoration: none;
+  border-top: 4px solid #ffffff;
+  border-bottom: 4px solid #ffffff;
+  padding: 12px 0;
+  margin: 0 20px;
+  /* visibility: hidden; */
+}
+
+.items:hover {
+  border-top: 4px solid #171717;
+  border-bottom: 4px solid #171717;
+  padding: 4px 0;
+}
+
+.logo {
+  color: white;
+  max-width: 100px;
+}
