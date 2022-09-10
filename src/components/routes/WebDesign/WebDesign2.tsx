@@ -2,6 +2,7 @@ import Gallery, { GalleryPic } from "../../Gallery/Gallery";
 import "./WebDesign.css";
 import { gsap } from "gsap";
 import GalleryWeb from "../../Gallery/GalleryWeb";
+import LazyLoad from "react-lazy-load";
 
 export interface WebGalleryPic {
   id: number;
